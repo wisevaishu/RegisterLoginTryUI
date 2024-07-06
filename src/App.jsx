@@ -3,12 +3,12 @@
 import React from 'react';
 import LoginForm from './components/LoginForm';
 
-function App() {
+const App = () => {
   return (
-    <div>
-     <LoginForm/> 
+    <div className="App">
+      <LoginForm />
     </div>
   );
-}
+};
 
 export default App;
