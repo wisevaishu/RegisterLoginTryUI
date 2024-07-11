@@ -1,14 +1,22 @@
-// src/App.js
-
 import React from 'react';
-import LoginForm from './components/LoginForm';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './components/Login.jsx';
+import Register from './components/Register.jsx';
 
-const App = () => {
-  return (
-    <div className="App">
-      <LoginForm />
-    </div>
-  );
-};
+function App() {
+    return (
+        <Router>
+            <div>
+                <h1>Employee Management System</h1>
+                <Routes>
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/register" element={<Register />} />
+                </Routes>
+            </div>
+        </Router>
+    );
+}
 
 export default App;
+
+
